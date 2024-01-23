@@ -1,0 +1,152 @@
+body {
+  background-color: rgb(235, 235, 235);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(45, 50, 55);
+}
+
+.container {
+  margin: 80px auto;
+  max-width: 600px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+}
+#joke-heading {
+  padding: 30px 0 0;
+}
+
+#poem-generator,
+#joke-generator {
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+}
+
+#example,
+#hint {
+  line-height: 2;
+  margin: 0 10px;
+  font-size: 12px;
+  color: rgb(101, 112, 123);
+  opacity: 0.8;
+}
+
+.instructions {
+  padding: 16px;
+  border: 1px solid rgb(155, 228, 247);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: rgb(101, 112, 123);
+}
+
+#poem-button,
+#submit-button {
+  margin: 0 15px 0;
+  background-color: rgb(155, 228, 247);
+  border-radius: 30px;
+  font-size: 16px;
+  border: 1px solid rgb(155, 228, 247);
+  color: rgb(45, 50, 55);
+  padding: 14px 24px;
+}
+
+#verses,
+#joke {
+  font-size: 16px;
+  background-color: white;
+  padding: 20px;
+  line-height: 2;
+  border-left: 4px solid rgb(155, 228, 247);
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  color: rgb(45, 50, 55);
+}
+
+#verses strong {
+  font-weight: 700;
+  color: rgb(155, 228, 247);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+a {
+  color: rgb(97, 182, 203);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} /* Firefox */
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} /* Webkit */
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} /* IE */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} /* Opera */
+
+.generating,
+.generate {
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-animation: blink normal 1.5s infinite ease-in-out; /* Firefox */
+  -webkit-animation: blink normal 1.5s infinite ease-in-out; /* Webkit */
+  -ms-animation: blink normal 1.5s infinite ease-in-out; /* IE */
+  animation: blink normal 1.5s infinite ease-in-out; /* Opera */
+}
