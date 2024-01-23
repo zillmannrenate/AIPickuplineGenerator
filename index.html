@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI fun generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI🤖 pickup-line generator</h1>
+      <div id="poem-generator">
+        <form id="poem-form" action="">
+          <input
+            type="text"
+            placeholder="Choose a word to be used in the pickup line"
+            required
+            autocomplete="off"
+            id="poem-topic"
+            class="instructions"
+          />
+          <input id="poem-button" type="submit" value="Submit" />
+        </form>
+        <div id="example">i.e. heart, smile, eyes</div>
+      </div>
+      <div id="verses" class="hidden"></div>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/zillmannrenate">Renate Zillmann</a> and is
+        <a href="https://github.com/zillmannrenate/poem-generator"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://ai-fun-generator.netlify.app/">hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
